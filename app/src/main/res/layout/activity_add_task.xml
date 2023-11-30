@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new Task "
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_name"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/edtName"
+        />
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task status"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:id="@+id/edtStatus"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnDueTasks"
+        android:onClick="btnAddOnclick"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="start"
+        android:id="@+id/btnBack"
+        android:onClick="btnBackOnclick"
+        />
+</LinearLayout>

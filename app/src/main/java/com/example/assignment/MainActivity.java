@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddTask.class);
         startActivity(intent);
     }
+
+    public void btnChangeStatusOnclick(View view) {
+        Intent intent = new Intent(this, ChangeTaskStatus.class);
+        startActivity(intent);
+    }
 }
